@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Working with SASS and Modules</title>
 
     <!-- this has to be a css file -->
-    <link rel="stylesheet" href="css/master.css">
-</head>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
 
-<body>
+  <body>
     <main id="app">
-        <h1 class="hidden">Welcome to my awesome app</h1>
+      <h1 class="hidden">Welcome to my awesome app</h1>
 
-        <!-- this is an HTML component -->
-        <nav class="main-nav">
-            <li>
-                <a href="#" class="nav-item">item 1</a>
-            </li>
+      <!-- this is an HTML component -->
+      <nav class="main-nav">
+        <li>
+          <a href="#" class="nav-item">item 1</a>
+        </li>
 
-            <li><a href="#" class="nav-item">item 2</a></li>
-            <li><a href="#" class="nav-item">item 3</a></li>
-            <li><a href="#" class="nav-item">item 4</a></li>
-            <li><a href="#" class="nav-item">item 5</a></li>
-        </nav>
-        <!-- end component -->
+        <li><a href="#" class="nav-item">item 2</a></li>
+        <li><a href="#" class="nav-item">item 3</a></li>
+        <li><a href="#" class="nav-item">item 4</a></li>
+        <li><a href="#" class="nav-item">item 5</a></li>
+      </nav>
+      <!-- end component -->
     </main>
+
+    <section class="users-section">
+      <h1 class="hidden">Our Users</h1>
+      <h2 class="user-name"></h2>
+      <p class="user-role"></p>
+      <p class="user-nickname"></p>
+    </section>
 
     <footer>this is a simple footer</footer>
 
     <!-- script files always go here -->
     <script type="module" src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

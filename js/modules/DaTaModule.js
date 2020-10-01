@@ -1,5 +1,5 @@
 export default {
-  name: 'Trevor',
-  role: 'Prof',
-  nickname: 'Tervor',
+  name: 'Justin',
+  role: 'Coordinator',
+  nickname: 'THE COORDINATOR',
 }
