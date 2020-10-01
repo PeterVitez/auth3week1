@@ -1,12 +1,7 @@
 {
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/master.scss",
-        "../sass/modules/_vars.scss",
-        "../sass/modules/_main.scss",
-        "../sass/modules/_nav.scss"
-    ],
-    "names": [],
-    "file": "master.css"
+"version": 3,
+"mappings": "AAAA,oCAAqC,CAEjC,IAAK,CAAE,gBAAgB,CAAC,MAAM,ECAlC,IAAK,CACD,IAAI,CCAI,8BAAgC,CDCxC,SAAS,CCAI,IAAI,CDEjB,gBAAgB,CCLJ,MAAM,CDOlB,MAAM,CAAE,CAAC,CACT,MAAM,CAAE,CAAC,CETb,GAAI,CACF,MAAM,CAAE,CAAC,CAET,aAAU,CACR,OAAO,CAAE,YAAY,CACrB,MAAM,CAAE,MAAM,CAEd,gBAAgB,CAAE,IAAI,CCNxB,aAAa,CDQW,GAAG,CACzB,eAAE,CACA,MAAM,CAAE,OAAO,CACf,eAAe,CAAE,IAAI,CAKvB,YAAE,CACA,KAAK,CAAE,IAAI,CElBjB,MAAO,CACH,QAAQ,CAAE,KAAK,CACf,MAAM,CAAE,CAAC,CACT,gBAAgB,CAAE,KAAK,CAEvB,KAAK,CAAE,KAAK",
+"sources": ["../sass/modules/_mediaqueries.scss","../sass/modules/_main.scss","../sass/modules/_vars.scss","../sass/modules/_nav.scss","../sass/modules/_mixins.scss","../sass/modules/_footer.scss"],
+"names": [],
+"file": "master.css"
 }
