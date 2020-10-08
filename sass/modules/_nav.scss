@@ -8,9 +8,11 @@ nav {
     background-color: blue;
 
     @include roundCorners(8px);
+    @include addPadding(5px 12px);
     a {
       cursor: pointer;
       text-decoration: none;
+      color: white;
     }
   }
 
