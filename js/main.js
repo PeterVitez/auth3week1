@@ -1,14 +1,23 @@
 // import your packages here
-import Team from './modules/DataModule.js'
-;(() => {
+import Team from "./modules/DataModule.js";
+(() => {
   // stub * just a place for non-component-specific stuff
-  console.log('loaded')
 
-  console.log(Team)
+  let userSection = document.querySelector(".users-section"),
+    userTemplate = document.querySelector("#profs-template").content;
 
-  let userSection = document.querySelector('.users-section').children
+  function handleDataSet(data) {
+    for (let user in data) {
+      let currentUser = userTemplate.cloneNode(true),
+        currentUserText = currentUser.querySelector(".user").children;
 
-  userSection[1].textContent = Team.Justin.name
-  userSection[2].textContent = Team.Justin.role
-  userSection[3].textContent = Team.Justin.nickname
-})()
+      currentUserText[1].textContent = data[user].name;
+      currentUserText[2].textContent = data[user].role;
+      currentUserText[3].textContent = data[user].nickname;
+
+      userSection.appendChild(currentUser);
+    }
+  }
+
+  handleDataSet(Team);
+})();
