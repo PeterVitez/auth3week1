@@ -1,8 +1,4 @@
-// import your packages here
-// import Team from "./modules/DataModule.js";
 (() => {
-  // stub * just a place for non-component-specific stuff
-
   //set up the XMLHttp object
   let myReq = new XMLHttpRequest();
 
