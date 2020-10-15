@@ -29,21 +29,20 @@
     }
   }
 
-  let userSection = document.querySelector(".users-section"),
-    userTemplate = document.querySelector("#profs-template").content;
-
   function handleDataSet(data) {
-    for (let user in data) {
+    let myData = JSON.parse(data),
+      userSection = document.querySelector(".user-section"),
+      userTemplate = document.querySelector("#profs-template").content;
+
+    for (let user in myData) {
       let currentUser = userTemplate.cloneNode(true),
         currentUserText = currentUser.querySelector(".user").children;
 
-      currentUserText[1].textContent = data[user].name;
-      currentUserText[2].textContent = data[user].role;
-      currentUserText[3].textContent = data[user].nickname;
+      currentUserText[1].textContent = myData[user].name;
+      currentUserText[2].textContent = myData[user].role;
+      currentUserText[3].textContent = myData[user].nickname;
 
       userSection.appendChild(currentUser);
     }
   }
-
-  handleDataSet(Team);
 })();
